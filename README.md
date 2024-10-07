@@ -11,4 +11,4 @@ Our software for cracks games &amp; softwares
 - ZeyFox: Auteur des modifications css visuel
 
 ## Version
-- v2.0b.1 : date d'estimation le 1 octobre 2024 (19h30)
+- v2.0b.1 : date d'estimation le 11 octobre 2024 (19h30)
