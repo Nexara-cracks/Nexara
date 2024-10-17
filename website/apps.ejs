@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset=UTF-8>
+    <meta content="width=device-width,initial-scale=1" name=viewport>
+    <title>Nexara - Cracked apps</title>
+    <meta content=#111 name=theme-color>
+    <meta content="Nexara - Votre site de crack" property=og:title>
+    <meta content="Découvrez nos cracks de logiciels." property=og:description>
+    <meta content=./images/app/nexara.png property=og:image>
+    <meta content=website property=og:type>
+    <link href=./css/app.css rel=stylesheet>
+    <link href=./css/header.css rel=stylesheet>
+    <script src="./js/burgermenu.js"></script>
+</head>
+<body>
+    <div id=particles-js></div>
+    <header>
+        <div class="container-header">
+            <h1>Nexara</h1>
+            <button class="nav-toggle">
+                <span class="burger-icon"></span>
+            </button>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.ejs">Accueil</a></li>
+                    <li><a href="apps.ejs">Apps</a></li>
+                    <li><a href="games.ejs">Jeux</a></li>
+                    <li><a href="Nexara.ejs">Notre équipe</a></li>
+                    <li><a href="soutiens.ejs" class="highlight">Nous soutenir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class=section id=apps>
+        <div class=container>
+            <h2>Crack d'applications</h2>
+            <div class=apps-grid>
+                <% apps.forEach(app => { %>
+                    <div class="app-card">
+                        <img alt="<%= app.name %>" src="<%= app.imageUrl %>">
+                        <h3><%= app.name %></h3>
+                        <p><%= app.description %></p>
+                        <a href="<%= app.downloadLink %>" class="cta-button">Télécharger</a>
+                        <a href="<%= app.moreinfo %>" class="more_info">+ d'infos</a>
+                    </div>
+                <% }); %>
+            </div>
+        </div>
+    </section>
+    <script src=https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.json loaded...');
+        });
+    </script>
+</body>
+</html>

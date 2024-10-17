@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexara your french crack site || v2.0.exe</title>
+    <meta content=#111 name=theme-color>
+    <meta content="Nexara - Votre site de crack" property=og:title>
+    <meta content="Découvrez nos cracks de jeux." property=og:description>
+    <meta content=./images/app/nexara.png property=og:image>
+    <meta content=website property=og:type>
+    <link href=./css/app.css rel=stylesheet>
+    <link href=./css/header.css rel=stylesheet>
+    <script src="./js/burgermenu.js"></script>
+</head>
+<body>
+    <div id=particles-js></div>
+    <header>
+        <div class="container-header">
+            <h1>Nexara</h1>
+            <button class="nav-toggle">
+                <span class="burger-icon1"></span>
+                <span class="burger-icon2"></span>
+            </button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.ejs">Accueil</a></li>
+                    <li><a href="apps.ejs">Apps</a></li>
+                    <li><a href="games.ejs">Jeux</a></li>
+                    <li><a href="Nexara.ejs">Notre équipe</a></li>
+                    <li><a href="soutiens.ejs" class="highlight">Nous soutenir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class=section id=apps>
+        <div class=container>
+            <h2>Crack de jeux</h2>
+            <div class=apps-grid>
+                <% games.forEach(game => { %>
+                    <div class="app-card">
+                        <img alt="<%= game.name %>" src="<%= game.imageUrl %>">
+                        <h3><%= game.name %></h3>
+                        <p><%= game.description %></p>
+                        <a href="<%= game.downloadLink %>" class="cta-button">Télécharger</a>
+                        <a href="<%= game.moreinfo %>" class="more_info">+ d'infos</a>
+                    </div>
+                <% }); %>
+        </div>
+    </section>
+    <footer>
+        <div class=container>
+            <p>© 2024 Nexara. All rights reserved.</div>
+    </footer>
+    <script src=https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.json loaded...');
+        });
+
+    </script>
+</body>
+</html>

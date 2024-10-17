@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexara your french crack site || v2.0.exe</title>
+    <link rel="stylesheet" href="./css/soutien.css">
+    <link href=./css/header.css rel=stylesheet>
+    <script src="./js/burgermenu.js"></script>
+</head>
+<body>
+    <div id=particles-js></div>
+    <header>
+        <div class="container-header">
+            <h1>Nexara</h1>
+            <button class="nav-toggle">
+                <span class="burger-icon1"></span>
+                <span class="burger-icon2"></span>
+            </button>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.ejs">Accueil</a></li>
+                    <li><a href="apps.ejs">Apps</a></li>
+                    <li><a href="games.ejs">Jeux</a></li>
+                    <li><a href="Nexara.ejs">Notre équipe</a></li>
+                    <li><a href="soutiens.ejs" class="highlight">Nous soutenir</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Nous Soutenir</h2>
+        <p>Votre contribution nous aide à améliorer nos services et vous proposez de nouveautés.</p>
+
+        <div class="support-options">
+            <!-- Don via PayPal -->
+            <div class="support-option">
+                <h3>Faire un don via PayPal</h3>
+                <p>Votre don nous aide à continuer notre travail. Recevez votre nom dans les crédits</p>
+                <a href="https://paypal.me/zevora" class="cta-button" target="_blank">Faire un don</a>
+            </div>
+
+            <!-- Regarder des publicités -->
+            <div class="support-option">
+                <h3>Regarder nos publicités</h3>
+                <p>En regardant nos publicités, vous nous aidez à générer des revenus pour financer nos projets.</p>
+                <!--<a href="https://www.nexara-manga.adkynet.eu/" class="cta-button" id="watch-ads">Regarder maintenant [NSFW]</a>-->
+                <a href="https://www.nexara-manga.adkynet.eu" class="cta-button" id="watch-ads">Regarder maintenant [NSFW]</a>
+            </div>
+
+            
+            <div class="support-option">
+                <h3>Acheter nos produits dérivés</h3>
+                <p>Supportez-nous en achetant des produits à notre effigie. Découvrez notre boutique en ligne!</p>
+                <a href="https://example.com/shop" class="cta-button" target="_blank" disabled>Visiter la boutique</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nexara. Tous droits réservés.</p>
+            <div class="social-icons">
+                <a href="https://discord.gg/E5SuAxNwbh"><img src="images/svg/discord.svg" alt="Discord"></a>
+                <a href="https://www.tiktok.com/@nexara.crack"><img src="images/svg/tiktok.svg" alt="TikTok"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.json"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js loaded');
+        });
+
+        document.querySelector('.close-button').addEventListener('click', function() {
+            document.querySelector('.banner').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

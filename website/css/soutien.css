@@ -1,0 +1,274 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #111;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero h2, .hero p {
+    margin-bottom: 20px;
+}
+
+.cta-button, nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner, .cta-button, nav ul li a {
+    font-size: 1.2rem;
+}
+
+.banner, .hero, .mission-point, .section {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.hero {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.hero h2 {
+    font-size: 3rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+}
+
+.cta-button:hover {
+    background: #e6006e;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.about {
+    background-color: #0e0e0e;
+    color: #fff;
+}
+
+.mission-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.mission-point {
+    width: 30%;
+    margin-bottom: 30px;
+}
+
+.mission-point h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mission-point p {
+    font-size: 1.1rem;
+}
+
+.banner {
+    background-color: #ff007a;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 100px;
+    z-index: 1;
+}
+
+.highlight {
+    color: #fff;
+    font-weight: bold;
+    background-color: gold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+}
+
+.close-button, .nav-toggle {
+    background: 0 0;
+    cursor: pointer;
+}
+
+.hidden, .nav-toggle {
+    display: none;
+}
+
+.banner span {
+    flex: 1;
+}
+
+.close-button {
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero h2, .section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-button, .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+    }
+
+    .mission-point {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 625px) {
+    .hero {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero h2, .section h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta-button, .hero p {
+        font-size: 0.9rem;
+    }
+
+    .cta-button {
+        padding: 6px 12px;
+    }
+
+    .section {
+        padding: 50px 0;
+    }
+
+    .mission-point {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .mission-point h3 {
+        font-size: 1.2rem;
+    }
+
+    .mission-point p {
+        font-size: 1rem;
+    }
+}
+
+.support-section {
+    padding: 60px 0;
+    background-color: #222;
+    color: #fff;
+}
+
+.support-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.support-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.support-option {
+    width: 30%;
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.support-option h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.support-option p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.support-option .cta-button {
+    background: #ff007a;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.support-option .cta-button:hover {
+    background: #e6006e;
+}
+
+.support-option:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .support-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .support-option {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}

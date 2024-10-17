@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #111;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container > p {
+    margin-bottom: 20px;
+}
+.app-description {
+    margin-top: 100px;
+    padding: 20px 0;
+}
+.app-description .container {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.app-description h2,
+.download-info h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.download-info,
+.main-content {
+    margin-bottom: 20px;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+.app-image {
+    flex: 1;
+    margin-right: 20px;
+    aspect-ratio: 16 / 9;
+}
+
+.app-image iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+}
+
+.app-image img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+.app-details {
+    flex: 1;
+    max-width: 40%;
+}
+.download-info {
+    text-align: center;
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+.download-button,
+.favorite-button {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    background: #ff007a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.download-button:hover,
+.favorite-button:hover {
+    background: #e6006e;
+}
+
+.uploader-info {
+    margin-bottom: 0px;
+}
+
+.overview,
+.product-info {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+.overview h3,
+.product-info h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+.product-info li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+footer {
+    background: #222;
+    color: #aaa;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+.uploader-card {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 10px;
+}
+.uploader-card .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 1500px) {
+    .container {
+        width: 90%;
+    }
+    .app-description h2,
+    .download-info h3 {
+        font-size: 1.8rem;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .app-image {
+        margin: 0 0 20px;
+    }
+    .app-details {
+        max-width: 100%;
+    }
+}
+@media (max-width: 768px) {
+    .app-description h2,
+    .download-info h3 {
+        font-size: 1.6rem;
+    }
+    .download-button,
+    .favorite-button {
+        font-size: 0.9rem;
+    }
+    .overview h3,
+    .product-info h4 {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 576px) {
+    .app-description p{
+        font-size: 0.9rem;
+    }
+    .app-description h2,
+    .download-info h3 {
+        font-size: 1.4rem;
+    }
+    .download-button,
+    .favorite-button {
+        padding: 8px 0;
+        font-size: 0.8rem;
+    }
+    .section {
+        padding: 50px 0;
+    }
+    .overview h3,
+    .product-info h4 {
+        font-size: 1.1rem;
+    }
+}
